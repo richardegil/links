@@ -1,32 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { useState, useEffect } from 'react'
 import './App.css'
+import Header from './components/Header'
+import PageLink from './components/PageLink'
+import Footer from './components/Footer'
+
+export type TLink = {
+  id: string;
+  name: string;
+  url: string;
+}
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [links, setLinks] = useState<TLink[]>([]);
+
+  async function getLinks(url: string): Promise<TLink[]> {
+    const data = await fetch(`${url}`);
+    return data.json();
+  }
+
+  useEffect(() => {
+    async function fetchLinks() {
+      const newLinks = await getLinks(`${import.meta.env.VITE_LINKS_URL}`);
+      setLinks(newLinks);
+    }
+    fetchLinks();
+  }, [])
+
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='flex flex-col w-screen h-full min-h-screen bg-black'>
+      <Header />
+      <main className='flex flex-col gap-4 w-screen justify-center items-center'>
+          {links && links.map((link) => (
+            <PageLink
+              key={link.id}
+              name={link.name}
+              url={link.url}
+            />
+          ))}
+      </main>
+      <Footer />
     </div>
   )
 }
