@@ -6,7 +6,19 @@ interface PageLinkProps {
 }
 const PageLink = ({name, url}: PageLinkProps) => {
   return (
-    <a className='flex items-center justify-center px-8 py-4 w-full max-w-[500px] bg-slate-50 text-slate-900' href={url}>
+    <a 
+      className='
+        flex 
+        items-center 
+        justify-center 
+        px-8 
+        py-4 
+        w-full 
+        max-w-[500px] 
+        bg-[#FFF] 
+        hover:bg-[#00FFFF]
+        text-slate-900
+      ' href={url}>
       {name}
     </a>
   )

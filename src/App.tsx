@@ -28,9 +28,9 @@ function App() {
 
 
   return (
-    <div className='flex flex-col w-screen h-full min-h-screen bg-black'>
+    <>
       <Header />
-      <main className='flex flex-col gap-4 w-screen justify-center items-center'>
+      <main className='flex flex-col gap-4 w-screen h-auto justify-start pt-[0px] pb-[0px] items-center'>
           {links && links.map((link) => (
             <PageLink
               key={link.id}
@@ -40,7 +40,7 @@ function App() {
           ))}
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
 
