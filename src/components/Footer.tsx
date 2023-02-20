@@ -12,19 +12,7 @@ const Footer = () => {
         justify-center 
         text-white 
         py-16 
-        bg-[#111111]
-        before:w-[120vw]
-        before:h-[200px]
-        before:absolute
-        before:top-0 
-        before:left-1/2 
-        before:bg-[#111111]
-        before:translate-x-[-50%]
-        before:translate-y-[-60%]
-        before:skew-x-[0deg]
-        before:skew-y-[-2deg]
-        before:z-0
-        before:appearance-none
+        bg-[#1b1b1b]
       '>
       <small className='relative z-1 font-copy'>&copy; { new Date().getFullYear() } Richard E. Gil</small>
     </footer>
