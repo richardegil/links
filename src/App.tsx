@@ -14,8 +14,24 @@ function App() {
   const [links, setLinks] = useState<TLink[]>([]);
 
   async function getLinks(url: string): Promise<TLink[]> {
-    const data = await fetch(`${url}`);
-    return data.json();
+    const data = await fetch(`${url}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${import.meta.env.VITE_API_KEY}`
+      },
+    });
+    let r = await data.json();
+    r = r[0]['content'][0]['items'];
+    
+    // Transform the data to extract id, title, and url from properties
+    const transformedLinks: TLink[] = r.map((item: any) => ({
+      id: item.id,
+      name: item.title,
+      url: item.properties?.url || ''
+    }));
+    
+    return transformedLinks;
   }
 
   useEffect(() => {

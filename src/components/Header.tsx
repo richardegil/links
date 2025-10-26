@@ -46,7 +46,7 @@ const Header = () => {
     <header className='flex  flex-col justify-start items-center py-12 gap-4'>
       <div>
       <svg id="logoMark" width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M92.75 46.875C92.75 72.2111 72.2111 92.75 46.875 92.75C21.5389 92.75 1 72.2111 1 46.875C1 21.5389 21.5389 1 46.875 1C72.2111 1 92.75 21.5389 92.75 46.875Z" fill="none" stroke="#FFC0CB" stroke-width="2"/>
+        <path d="M92.75 46.875C92.75 72.2111 72.2111 92.75 46.875 92.75C21.5389 92.75 1 72.2111 1 46.875C1 21.5389 21.5389 1 46.875 1C72.2111 1 92.75 21.5389 92.75 46.875Z" fill="none" stroke="#FFC0CB" strokeWidth="2"/>
         <path d="M21.5874 38.3187C22.6126 38.3187 23.4437 37.4876 23.4437 36.4625C23.4437 35.4373 22.6126 34.6062 21.5874 34.6062C20.5623 34.6062 19.7312 35.4373 19.7312 36.4625C19.7312 37.4876 20.5623 38.3187 21.5874 38.3187Z" fill="#FFC0CB"/>
         <path d="M29.025 69.5438C30.0501 69.5438 30.8812 68.7127 30.8812 67.6876C30.8812 66.6624 30.0501 65.8313 29.025 65.8313C27.9998 65.8313 27.1687 66.6624 27.1687 67.6876C27.1687 68.7127 27.9998 69.5438 29.025 69.5438Z" fill="#FFC0CB"/>
         <path d="M32.7374 58.3938C33.7625 58.3938 34.5936 57.5627 34.5936 56.5375C34.5936 55.5123 33.7625 54.6813 32.7374 54.6813C31.7122 54.6813 30.8811 55.5123 30.8811 56.5375C30.8811 57.5627 31.7122 58.3938 32.7374 58.3938Z" fill="#FFC0CB"/>
@@ -63,14 +63,14 @@ const Header = () => {
         <path d="M78.0938 47.9875C79.119 47.9875 79.9501 47.1565 79.9501 46.1313C79.9501 45.1061 79.119 44.275 78.0938 44.275C77.0686 44.275 76.2375 45.1061 76.2375 46.1313C76.2375 47.1565 77.0686 47.9875 78.0938 47.9875Z" fill="#FFC0CB"/>
         <path d="M68.4249 42.0375C69.45 42.0375 70.2811 41.2064 70.2811 40.1812C70.2811 39.156 69.45 38.325 68.4249 38.325C67.3997 38.325 66.5686 39.156 66.5686 40.1812C66.5686 41.2064 67.3997 42.0375 68.4249 42.0375Z" fill="#FFC0CB"/>
         <path d="M69.9124 53.9313C70.9376 53.9313 71.7687 53.1002 71.7687 52.075C71.7687 51.0498 70.9376 50.2188 69.9124 50.2188C68.8872 50.2188 68.0562 51.0498 68.0562 52.075C68.0562 53.1002 68.8872 53.9313 69.9124 53.9313Z" fill="#FFC0CB"/>
-        <path d="M30.5125 16.3875L76.6062 37.9499" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M32.7375 56.5375L55.0438 68.4312" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M46.8625 69.9188L63.225 15.6438" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M78.0937 46.125L21.5874 36.4625" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M72.1437 26.0563L31.9937 31.2563" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M45.3813 77.35L28.2812 61" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M29.0249 67.6875L68.4249 40.1813" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
-        <path d="M70 52L39 49" stroke="#FFC0CB" stroke-width="0.6" stroke-miterlimit="10"/>
+        <path d="M30.5125 16.3875L76.6062 37.9499" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M32.7375 56.5375L55.0438 68.4312" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M46.8625 69.9188L63.225 15.6438" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M78.0937 46.125L21.5874 36.4625" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M72.1437 26.0563L31.9937 31.2563" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M45.3813 77.35L28.2812 61" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M29.0249 67.6875L68.4249 40.1813" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
+        <path d="M70 52L39 49" stroke="#FFC0CB" strokeWidth="0.6" strokeMiterlimit="10"/>
       </svg>
       </div>
       <div>
