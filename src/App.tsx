@@ -22,7 +22,7 @@ function App() {
       },
     });
     let r = await data.json();
-    r = r[0]['content'][0]['items'];
+    r = r['content'][0]['items'];
     
     // Transform the data to extract id, title, and url from properties
     const transformedLinks: TLink[] = r.map((item: any) => ({
